@@ -1,0 +1,101 @@
+<!DOPTYPE html>
+<html>
+<head> <title> about </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="new 1.css" type="text/css">
+<script src="regscript.js"></script>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<style>
+		.h1{
+			margin-top: 0px;
+			padding-top: 20px;
+			margin-left:-50px;
+			}
+		.h3{
+			color:chartreuse;
+			font-family:sans-serif;
+
+			}
+		.li{
+			text-align: left;
+			margin-left: 50px;
+			}
+		.p{
+			font-size: 16px;
+			margin-left: 50px;
+			font-family: sans-serif;
+			}
+	</style>
+		<script>
+			$(document).ready(function()
+			{
+			$("#drop-a-g").click(function()
+				{
+					$("#about").slideToggle("slow");
+				});
+			});
+			$(document).ready(function()
+			{
+			$("#home").click(function()
+				{
+					window.location="index.html";
+				});
+			});
+			$(document).ready(function()
+			{
+			$("#gide").click(function()
+				{
+					window.location="gide.html";
+				});
+			});
+		</script>
+<body class="body">
+	<div class="first">
+		<table border="0" align="center">
+			<tr>
+				<td><img src="icon 2.png" width="150px" height="100px" style="border:2px solid black"></td>
+				<td><h1 style="font-size:50px">Online Library System</h1></td>
+			</tr>
+		</table>
+		<div class="second">
+			<div class="btngroup">
+				<button class="button" id="home">Home</button>
+				<button class="button" id="drop-a-g" style="background-color:rgb(54, 115, 115)">About</button>
+				<div id="about" style="margin-left:93px;">
+					<p><button class="button" style="width:140px;background-color:rgb(54, 115, 115);" id="ab">About Us</button></p>
+					<p><button class="button" style="width:140px;" id="gide">GuideLine</button></p>
+				</div>
+				<form class="search">
+				<input type="text" placeholder="Search.." name="Search" style="width:370px;margin-left:860px;">
+				<button type="button">Search</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="abutcon">
+        <h1 class="h1">About us</h1>
+        <div class="ABT">
+            
+            <h3 class="h3">We are the developers of this Online Library System and we are from Group Two</h3>
+            <ul>
+                <li type="square" class="li">OUR TEAM MEMBERS</li>
+                <p></p>
+                <li type="circle" class="li">TG/2020/678 &nbsp;  K.P.D.T. &nbsp;DILSHAN</li>
+                <li type="circle" class="li">TG/2020/679 &nbsp;  M.S.M. &nbsp;SIYAM</li>
+                <li type="circle" class="li">TG/2020/680 &nbsp;  K.D.T. &nbsp;BANDARA</li>
+                <li type="circle" class="li">TG/2020/681 &nbsp;  C.A. &nbsp;JAYASOORIYA</li>
+                <li type="circle" class="li">TG/2020/682 &nbsp;  D.G.H.T. &nbsp;HARSHANA</li>
+                <li type="circle" class="li">TG/2020/683 &nbsp;  G.P. &nbsp;THARAKA</li>
+                <li type="circle" class="li">TG/2020/684 &nbsp;  M.A.D.A.M. &nbsp;ARACHCHI</li>
+            </ul>
+            <h3 class="h3">What We DO</h3>
+            <p class="p">We design and develop small businness web sites to large size web sites. </p>
+            <p class="p">Our costomers get exactly what they want by communicating our team directly and controlling the project as if they in the same room with the team</p>
+            <p class="p">If you are looking for a software company to outsource development of your web project, <a href="contact.html" target="_self">contact us!</a></p>
+        </div>
+
+    </div>
+</body>
+</html>

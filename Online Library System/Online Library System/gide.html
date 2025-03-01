@@ -1,0 +1,73 @@
+<!DOPTYPE html>
+<html>
+<head> <title> guideline </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="new 1.css" type="text/css">
+<script src="regscript.js"></script>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script>
+			$(document).ready(function()
+			{
+				$(".gidefade").fadeIn(3000);
+			});
+			$(document).ready(function()
+			{
+			$("#drop-a-g").click(function()
+				{
+					$("#about").slideToggle("slow");
+				});
+			});
+			$(document).ready(function()
+			{
+			$("#home").click(function()
+				{
+					window.location="index.html";
+				});
+			});
+			$(document).ready(function()
+			{
+			$("#ab").click(function()
+				{
+					window.location="about.html";
+				});
+			});
+	</script>
+<body class="body">
+	<div class="first">
+		<table border="0" align="center">
+			<tr>
+				<td><img src="icon 2.png" width="150px" height="100px" style="border:2px solid black"></td>
+				<td><h1 style="font-size:50px">Online Library System</h1></td>
+			</tr>
+		</table>
+		<div class="second">
+			<div class="btngroup">
+				<button class="button" id="home">Home</button>
+				<button class="button" id="drop-a-g" style="background-color:rgb(54, 115, 115)">About</button>
+				<div id="about" style="margin-left:93px;">
+					<p><button class="button" style="width:140px;" id="ab">About Us</button></p>
+					<p><button class="button" style="width:140px;background-color:rgb(54, 115, 115);" id="gide">GuideLine</button></p>
+				</div>
+				<form class="search">
+				<input type="text" placeholder="Search.." name="Search" style="width:370px;margin-left:840px;">
+				<button type="button">Search</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="gideline" class="gidefade">
+			<h1 align="center"style="font-size:40px;">User Guideline</h1>
+			<h2 style="margin-left:50px;">This is user guideline for Library.</h2>
+			<h2 style="margin-left:50px;">Please read and continue.</h2>
+			<ol type="1" style="margin-top:50px;">
+				<li><h3>First, you have to log in to the library through your username and password.</h3></li>
+				<li><h3>If you don’t have a username and password, then you have to sign in and get the membership.</h3></li>
+				<li><h3>After becoming a member in our library, you can read or download books.</h3></li>
+				<li><h3>For guests they have to log in as guest.</h3></li>
+				<li><h3>There are many book categories for you.</h3></li>
+			</ol>
+	</div>
+</body>
+</html>

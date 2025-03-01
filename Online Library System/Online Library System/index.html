@@ -1,0 +1,363 @@
+<!DOPTYPE html>
+<html>
+<head> <title> OLS </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="new 1.css" type="text/css">
+<script src="regscript.js"></script>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<style>
+			.but1{
+					background-color:#1db37c;
+					width:170px;
+					height:40px;
+			}
+			.but2{
+				background-color:#f5564a;
+				width:170px;
+				height:40px;
+			}
+	</style>
+		<script>
+			$(document).ready(function()
+			{
+				$("#log").click(function()
+				{
+					$(".div3").fadeIn(2000);
+				});
+			});
+		</script>
+		<script>
+		$(document).ready(function()
+		{
+			$("#con").click(function()
+			{
+				$(".div3").fadeOut();
+			});
+		});
+		</script>
+		<script>
+			$(document).ready(function()
+			{
+				$("#reg").click(function()
+				{
+					$(".want").fadeIn(1000);
+				});
+			});
+		</script>
+		<script>
+			$(document).ready(function()
+			{
+			$("#no").click(function()
+				{
+					$(".want").fadeOut(100);
+				});
+			});
+		</script>
+		<script>
+			$(document).ready(function()
+			{
+			$("#here").click(function()
+				{
+					$(".want").fadeOut(1000);
+					window.location="form.html";
+				});
+			});
+		</script>
+		<script>
+			$(document).ready(function()
+			{
+				$(".welcome").fadeIn(3600);
+				$(".welcome").fadeOut(3600);
+			});
+		</script>
+		<script>
+			let slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+			showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+			showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			let i;
+			let slides = document.getElementsByClassName("mySlides");
+			let dots = document.getElementsByClassName("dot");
+			if (n > slides.length) {slideIndex = 1}    
+			if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+			}
+			for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";  
+			dots[slideIndex-1].className += " active";
+			}
+		</script>
+		<script>
+			$(document).ready(function()
+			{
+			$("#drop").click(function()
+				{
+					$("#dmenu").slideToggle("slow");
+				});
+			});
+		</script>
+		<script>
+			$(document).ready(function()
+			{
+			$("#ebook").click(function()
+				{
+					window.location="ebooks.html";
+					$("#dmenu").slideUp("slow");
+				});
+			});
+			$(document).ready(function()
+			{
+			$("#pass").click(function()
+				{
+					window.location="passpaper.html";
+					$("#dmenu").slideUp("slow");
+				});
+			});
+			$(document).ready(function()
+			{
+			$("#news").click(function()
+				{
+					window.location="newspaper.html";
+					$("#dmenu").slideUp("slow");
+				});
+			});
+			$(document).ready(function()
+			{
+			$("#visitgide").click(function()
+				{
+					window.location="book categories.html";
+				});
+			});
+		</script>
+		<script>
+			$(document).ready(function()
+			{
+			$("#contact").click(function()
+				{
+					window.location="contact.html";
+				});
+			});
+		</script>
+		<script>
+			
+			var mybutton = document.getElementById("top");
+
+			
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			mybutton.style.display = "block";
+			} else {
+			mybutton.style.display = "none";
+			}
+			}
+
+			
+			function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+			}
+		</script>
+		<script>
+			$(document).ready(function()
+			{
+			$("#drop-a-g").click(function()
+				{
+					$("#about").slideToggle("slow");
+				});
+			});
+			$(document).ready(function()
+			{
+			$("#ab").click(function()
+				{
+					window.location="about.html";
+				});
+			});
+			$(document).ready(function()
+			{
+			$("#gide").click(function()
+				{
+					window.location="gide.html";
+				});
+			});
+		</script>
+</head>
+<body class="body">
+	<div id="wel" class="welcome">
+			<h1 id="hh2"style="font-size:90px;text-align:center;font-family:arial;"><span class="sspan"></span></h1>
+	</div>
+	<div class="first">
+		<table border="0" align="center">
+			<tr>
+				<td><img src="icon 2.png" width="150px" height="100px" style="border:2px solid black"></td>
+				<td><h1 style="font-size:50px">Online Library System</h1></td>
+			</tr>
+		</table>
+		<div class="second">
+			<div class="btngroup">
+				<button class="button" style="background-color:rgb(54, 115, 115)">Home</button>
+				<button class="button" id="visitgide">Visit as Guest</button> 
+				<button class="button" id="log">Sign In</button>	
+				<button class="button" id="reg">Sign Up</button>	
+				<button class="button" id="drop-a-g">About</button>
+				<button class="button" id="contact">Contact</button>
+				<button class="button" id="drop">Downloads</button>
+				<div id="about">
+					<p><button class="button" style="width:140px;" id="ab">About Us</button></p>
+					<p><button class="button" style="width:140px;" id="gide">GuideLine</button></p>
+				</div>
+				<div id="dmenu">
+					<p><button class="button" style="width:180px;" id="ebook">E-books</button></p>
+					<p><button class="button" style="width:180px;" id="pass">Pass-Papers</button></p>
+					<p><button class="button" style="width:180px;" id="news">News-Papers</button></p>
+				</div>
+				
+				<form class="search">
+				<input type="text" placeholder="Search.." name="Search" style="width:370px;margin-left: 170px;">
+				<button type="button">Search</button>
+				</form>
+				
+			</div>
+		</div>
+	</div>
+	<div class="div3" id="thrd">
+		<h1 align="center" style="font-size:35px;font-family:arial;">Login Your Library</h1>
+		<div>
+			<form action="mydash.html" target="_self" name="loginform" method="post">
+				<h3 align="center">Enter Your User Name</h3>
+				<input type="text" name="logname" style="width:350px;height:30px" required>
+				<h3 align="center">Enter Your Password</h3>
+				<input type="password" name="logpwd"style="width:350px;height:30px" required>
+				<br/><br/>
+				<p align="center">
+					<button type="reset" id="con" class="but2">Cancel</button>
+					<button class="but1" type="submit" onclick="login()">Login</button>
+				</p>
+				<input type="checkbox"><b>Rmember Me</b>
+				<p align="center">Forgot <a href="">Password?</a></p>
+			</form>
+		</div>
+	</div>
+	
+	<div id="zero" class="want">
+		<h1 align="center">Do You Want Register?</h1>
+		<br/>
+		<p align="center">
+			<button class="but2" id="no">NO</button>
+			<button id="here" class="but1">YES</button>
+		</p>
+	</div>
+	<div id="homediv">
+		<div class="slideshow-container">
+
+		<div class="mySlides fade" style="display:inline;">
+			<div class="numbertext">1 / 5</div>
+			<img src="products_ils.png" style="width:100%;height:100%;">
+			<div class="text">Caption one</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">2 / 5</div>
+			<img src="1_O2asIK6qznxs-O0dVnMKHA-scaled.jpg" style="width:100%;height:100%;">
+			<div class="text">Caption Two</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">3 / 5</div>
+			<img src="public_library.jpg" style="width:100%;height:100%;">
+			<div class="text">Caption Three</div>
+		</div>
+		
+		<div class="mySlides fade">
+			<div class="numbertext">4 / 5</div>
+			<img src="digital-software.jpg" style="width:100%;height:100%;">
+			<div class="text">Caption four</div>
+		</div>
+		
+		<div class="mySlides fade">
+			<div class="numbertext">5 / 5</div>
+			<img src="iStock-646214826_new.jpg" style="width:100%;height:100%;">
+			<div class="text">Caption five</div>
+		</div>
+		
+		<a class="prev" onclick="plusSlides(-1)">❮</a>
+		<a class="next" onclick="plusSlides(1)">❯</a>
+		</div>
+	</div>
+		
+	<div id="ind">
+		<table style="width:100%;">
+			<caption><h1 align="center" style="font-size:50px;color:black;background-color:white;">Top ten books</h1></caption>
+			<tr>
+					<td style="border-bottom:3px solid white;"><img src="book1.jpg" class="booktop"></td>
+					<td style="border-bottom:3px solid white;padding:10px 10px 10px 10px;font-size:25px;color:white;">From the author of The English Patient, we have one of the greatest Sri Lankan novels of all time. In Running in the Family, Michael Ondaatje tells the story of man returning to his roots in Sri Lanka in the late 1970s. This is a great family memoir of a baroque Dutch-Ceylonese family.</td>
+			</tr>
+			<tr>
+					<td style="border-bottom:3px solid white;padding:10px 10px 10px 10px;font-size:25px;color:white;">Samanth Subramanian is a journalist from New Delhi. His book, This Divided Island is a great insight into the Sri Lankan War. The island was stuck in a war for many years, and it was just recently that it ended. Understanding the war is a wonderful way to get to know the people, and will give you knowledge very little visitors have.</td>
+					<td style="border-bottom:3px solid white;"><img src="book2.jpg" class="booktop" align="right"></td>
+			</tr>
+			<tr>
+					<td style="border-bottom:3px solid white;"><img src="book3.jpg" class="booktop"></td>
+					<td style="border-bottom:3px solid white;padding:10px 10px 10px 10px;font-size:25px;color:white;">For 150 years, the Dutch were a big part of Sri Lankan history. Cinnamon and Elephants is a collection of images and illustrations from the Rijksmuseum collection that tell the story of all that happened during the Dutch colonial rule in Sri Lanka. The VOC, also known as the Dutch East India company has influenced much of the history of Sri Lanka and reading about it will help visitors understand a lot of what they see and experience here.</td>
+			</tr>
+			<tr>
+					<td style="border-bottom:3px solid white;padding:10px 10px 10px 10px;font-size:25px;color:white;">British political activist and author Leonard Woolf spent eight years in Sri Lanka between 1904 and 1912. In Woolf in Ceylon, author Christopher Ondaatje tells the story of Leonard’s life and his time in the Sri Lankan jungle. Tales of travels to the north of Sri Lanka in the midst of the Tamil crisis are particularly memorable.</td>
+					<td style="border-bottom:3px solid white;"><img src="book4.jpg" class="booktop" align="right"></td>
+			</tr>
+			<tr>
+					<td style="border-bottom:3px solid white;"><img src="book5.jpg" class="booktop"></td>
+					<td style="border-bottom:3px solid white;padding:10px 10px 10px 10px;font-size:25px;color:white;">Leonard Woolf started writing a series of books about the time he spent in Sri Lanka. A Village in the Jungle tells the story of the hardships and mysteries of life in the tropics. His period in Sri Lanka gave Woolf first-hand insight into what it’s like to live in the deep, hot, intense jungle. This is one of the all-time favorite Sri Lankan novels.</td>
+			</tr>
+			<tr>
+					<td style="border-bottom:3px solid white;padding:10px 10px 10px 10px;font-size:25px;color:white;">The Burghers are the mixed descendants of Sri Lankans and foreigners like Dutch, Portuguese and British who still inhabit the island in their own special features and cooking style. The Jam Fruit Tree, written by Carl Muller, a Burgher himself, is a story of family culture and a people that refuse to disappear.</td>
+					<td style="border-bottom:3px solid white;"><img src="book6.jpg" class="booktop" align="right"></td>
+			</tr>
+			<tr>
+					<td style="border-bottom:3px solid white;"><img src="book7.jpg" class="booktop"></td>
+					<td style="border-bottom:3px solid white;padding:10px 10px 10px 10px;font-size:25px;color:white;">Shyam Selvadurai is one of the favorite contemporary writers from Sri Lanka. He has lived in Canada since he was a boy and his returns to Colombo inspire the stories in his books. Cinnamon Gardens takes place in the neighborhood of the same name during the 1920s. A story of family and history deep in the heart of Colombo.</td>
+			</tr>
+			<tr>
+					<td style="border-bottom:3px solid white;padding:10px 10px 10px 10px;font-size:25px;color:white;">Of the newest books published about Sri Lanka, Serendipity is one of the most colorful and vibrant. Ashok Ferrey tells contemporary stories of modern Sri Lanka. Stories of Sri Lankans that come back to the island after years abroad are a dime a dozen, but not all are as wonderful as the ones told by Ferrey.</td>
+					<td style="border-bottom:3px solid white;"><img src="book8.jpg" class="booktop" align="right"></td>
+			</tr>
+			<tr>
+					<td style="border-bottom:3px solid white;"><img src="book9.jpg" class="booktop"></td>
+					<td style="border-bottom:3px solid white;padding:10px 10px 10px 10px;font-size:25px;color:white;">Another talented contemporary Sri Lankan writer is Nayomi Munaweera. Her book, Island of a Thousand Mirrors tells the story of a Sinhala girl and a Tamil girl that surpass the conflict of their cultures. This is a young view of the Sri Lankan conflict and a good one at that.</td>
+			</tr>
+			<tr>
+					<td style="border-bottom:3px solid white;padding:10px 10px 10px 10px;font-size:25px;color:white;">The legend of The Ramayana is an epic tale of Rama, who traveled to the teardrop island off the coast of southern India to save his princess bride, Sita. A purely magical story that is part of the culture, the history and souls of the Sri Lankan people.</td>
+					<td style="border-bottom:3px solid white;"><img src="book10.jpg" class="booktop" align="right"></td>
+			</tr>
+		</table>
+	</div>
+	<div id="other">
+		<table style="height:400px;width:100%;">
+				<tr>
+					<td colspan="5"><h1 align="center" style="background-color:white;">Other Top Libraries</h1></td>
+				</tr>
+				<tr>
+					<td align="center"><a href="https://www.britishcouncil.lk/library/digital-library" target="_blank"><div id="otherdiv" style="background-image:url('British_Council.jpg');"></div></a></td>
+					<td align="center"><a href="https://openlibrary.org/" target="_blank"><div id="otherdiv" style="background-image:url('openlibrary.jpg');"></div></a></td>
+					<td align="center"><a href="https://onlinelibrary.wiley.com/" target="_blank"><div id="otherdiv" style="background-image:url('Wiley-1.png');"></div></a></td>
+					<td align="center"><a href="https://www.loc.gov/collections/world-digital-library/" target="_blank"><div id="otherdiv" style="background-image:url('world_digital_library.jpg');"></div></a></td>
+					<td align="center"><a href="https:https://librarika.com/" target="_blank"><div id="otherdiv" style="background-image:url('Librarika-logo.jpg');"></div></a></td>
+				</tr>
+		</table>
+		<button onclick="topFunction()" id="top" title="Go to top">Top</button>
+	</div>
+</body>
+</html>

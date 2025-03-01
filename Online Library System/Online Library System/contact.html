@@ -1,0 +1,214 @@
+<html>
+<head>
+	<title>contact</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="new 1.css" type="text/css">
+	<script src="regscript.js"></script>
+	<script src="jquery-3.6.0.min.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<style>
+		p{
+			font-size:25px;
+		}
+		h3{
+			color:white;
+		}
+		.cont{
+			background-color:black;
+			width:140px;
+			height:45px;
+			border-radius:10px 10px 10px 10px;
+			padding-bottom:35px;
+		}
+		.cont:hover{
+			background-color:rgb(54, 115, 115);
+			-ms-transform: scale(1.2);
+			-webkit-transform: scale(1.1);
+			transform: scale(1.1); 
+		}
+	</style>
+	<style>
+		.column {
+				float: left;
+				width: 23.3%;
+				margin-bottom: 16px;
+				padding: 0 8px;
+		  
+			}
+
+		.card {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			margin: 8px;
+		 
+		}
+
+		.about-section {
+				padding: 50px;
+				text-align: center;
+				background-color: #474e5d;
+				color: white;
+		}
+
+		.container {
+				padding: 0 16px;
+				background-color:#ebf2ec;
+				border-radius:25px;
+				border:5px solid blue;
+		}
+		.row{
+			margin-top:200px;
+			position:absolute;
+		}
+		.container::after, .row::after {
+				content: "";
+				clear: both;
+				display: table;
+		}
+
+		.title {
+			color: grey;
+		}
+
+		.buttons {
+					border: none;
+					outline: 0;
+					display: inline-block;
+					padding: 8px;
+					color: white;
+					background-color:#182981;
+					text-align: center;
+					cursor: pointer;
+					width: 100%;
+		}
+
+		.buttons:hover {
+			background-color: #555;
+		}
+
+		@media screen and (max-width: 650px) {
+		  .column {
+				width: 100%;
+				display: block;
+		  }
+		}
+</style>
+	<script>
+			$(document).ready(function()
+			{
+			$("#home").click(function()
+				{
+					window.location="index.html";
+				});
+			});
+		</script>
+</head>
+<body class="body">
+	<div class="first">
+		<table border="0" align="center">
+			<tr>
+				<td style="border-radius:0px;border:none;"><img src="icon 2.png" width="150px" height="100px" style="border:2px solid black"></td>
+				<td style="border-radius:0px;border:none;"><h1 style="font-size:50px">Online Library System</h1></td>
+			</tr>
+		</table>
+		<div class="second">
+			<div class="btngroup">
+				<button class="button" id="home">Home</button>
+				<button class="button" style="background-color:rgb(54, 115, 115)">Contact</button>
+				<form class="search">
+				<input type="text" placeholder="Search.." name="Search" style="margin-left:830px;">
+				<button type="button">Search</button>
+				</form>
+			</div>
+		</div>
+	</div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="man.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Mohomad Shiyam</h2>
+        <p class="title">Designer 01</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>siyam12345@gmail.com</p>
+        <p><button class="buttons">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="man.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Tharidu</h2>
+        <p class="title">Designer 02</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>tharidu12345@gmail.com</p>
+        <p><button class="buttons">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="man.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Pramuda tharaka</h2>
+        <p class="title">Designer 03</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>pramuda1234@gmail.com</p>
+        <p><button class="buttons">Contact</button></p>
+      </div>
+    </div>
+  </div>
+   <div class="column">
+    <div class="card">
+      <img src="man.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Tharuka Dilshan</h2>
+        <p class="title">Designer 04</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>danidu12345@gmail.com</p>
+        <p><button class="buttons">Contact</button></p>
+      </div>
+    </div>
+  </div>
+   <div class="column">
+    <div class="card">
+      <img src="women.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Deshani Bandara</h2>
+        <p class="title">Designer 05</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>deshani12345@gmail.com</p>
+        <p><button class="buttons">Contact</button></p>
+      </div>
+    </div>
+  </div>
+   <div class="column">
+    <div class="card">
+      <img src="women.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Danuki Amaya</h2>
+        <p class="title">Designer 06</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>danuki12345@gmail.com</p>
+        <p><button class="buttons">Contact</button></p>
+      </div>
+    </div>
+  </div>
+   <div class="column">
+    <div class="card">
+      <img src="women.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Chamodi</h2>
+        <p class="title">Designer 07</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>chamodi1234@gmail.com</p>
+        <p><button class="buttons">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

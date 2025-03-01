@@ -1,0 +1,103 @@
+<!DOPTYPE html>
+<html>
+<head> <title> book category </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="new 1.css" type="text/css">
+<script src="regscript.js"></script>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<style>
+	.td:hover {
+		-ms-transform: scale(0.8);
+		-webkit-transform: scale(0.8);
+		transform: scale(0.8);
+		}
+	.td{
+		border:1px solid black;
+		border-radius:20px 20px 20px 20px;
+		width:10%;
+	}
+	a:hover{
+		color:green;
+	}
+</style>
+ </head>
+<script>
+	$(document).ready(function()
+	{
+		$("#home").click(function()
+		{
+			window.location="index.html";
+		});
+	});
+</script>
+<body class="body">
+<div class="first">
+		<table border="0" align="center">
+			<tr>
+				<td style="border-radius:0px;border:none;"><img src="icon 2.png" width="150px" height="100px" style="border:2px solid black"></td>
+				<td style="border-radius:0px;border:none;"><h1 style="font-size:50px">Online Library System</h1></td>
+			</tr>
+		</table>
+		<div class="second">
+			<div class="btngroup">
+				<button class="button" id="home">Home</button>
+				<button class="button" id="visitgide" style="background-color:rgb(54, 115, 115)">Visit as Guest</button>
+				<form class="search">
+				<input type="text" placeholder="Search.." name="Search" style="margin-left:785px;">
+				<button type="button">Search</button>
+				</form>
+			</div>
+		</div>
+</div>
+<div class="content">
+		<table style="width:100%;height:1000px;">
+		<caption><h1 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:40px;margin-top:40px;" align="center">Books Categories</h1></caption>
+		<tr>
+			<td style="background-image:url(rom.jpg);background-size:cover;" class="2td td">
+			<p style="background-color:rgb(214, 236, 216);opacity:0.8;font-size:30px;" align="center"><a href="https://manybooks.net/search-book?field_genre%5B38%5D=38)" target="_blank">Romance</a></p>
+			</td>
+		
+			<td style="background-image:url(act.jpg);background-size:cover;" class="2td td">
+			<p style="background-color:rgb(214, 236, 216);opacity:0.8;font-size:30px;" align="center"><a href="https://manybooks.net/search-book?field_genre%5B10%5D=10Action and adventure)" target="_blank">Action and adventure</a></p>
+			</td>
+			<td style="background-image:url(mis.jpg);background-size:cover;" class="2td td">
+			<p style="background-color:rgb(214, 236, 216);opacity:0.8;font-size:30px;" align="center"><a href="https://manybooks.net/search-book?field_genre%5B32%5D=32&field_genre%5B12%5D=12)" target="_blank">Mystery and thriller</a></p>
+			</td>
+			<td style="background-image:url(bio.jpg);background-size:cover;" class="2td td">
+			<p style="background-color:rgb(214, 236, 216);opacity:0.8;font-size:30px;" align="center"><a href="https://manybooks.net/search-book?field_genre%5B32%5D=32&field_genre%5B12%5D=12)" target="_blank">Biographies and history</a></p>
+			</td>
+			
+		</tr>
+		<tr>
+			<td style="background-image:url(fan.jpg);background-size:cover;" class="2td td">
+			<p style="background-color:rgb(214, 236, 216);opacity:0.8;font-size:30px;" align="center"><a href="https://manybooks.net/search-book?field_genre%5B17%5D=17)" target="_blank">Fantacy</a></p>
+			</td>
+		
+			<td style="background-image:url(his.jpg);background-size:cover;" class="2td td">
+			<p style="background-color:rgb(214, 236, 216);opacity:0.8;font-size:30px;" align="center">	<a href="https://manybooks.net/search-book?field_genre%5B29%5D=29)" target="_blank">Historical fiction</a></p>
+			</td>	
+			<td style="background-image:url(hor.jpg);background-size:cover;" class="2td td">
+			<p style="background-color:rgb(214, 236, 216);opacity:0.8;font-size:30px;" align="center">	<a href="https://manybooks.net/search-book?field_genre%5B18%5D=18)" target="_blank">Horror</a></p>
+			</td>
+			<td style="background-image:url(chil.jpg);background-size:cover;" class="2td td">
+			<p style="background-color:rgb(214, 236, 216);opacity:0.8;font-size:30px;" align="center"><a href="https://manybooks.net/search-book?field_genre%5B14%5D=14)" target="_blank">Children</a></p>
+			</td>
+			
+		</tr>
+		<tr>
+			
+			<td style="border:none;"></td>
+			<td style="background-image:url(scn.jpg);background-size:cover;" class="2td td">
+			<p style="background-color:rgb(214, 236, 216);opacity:0.8;font-size:30px;" align="center">	<a href="https://manybooks.net/search-book?field_genre%5B26%5D=26)" target="_blank">Science fiction</a></p>
+			</td>
+			<td style="background-image:url(lit.jpg);background-size:cover;" class="2td td">
+			<p style="background-color:rgb(214, 236, 216);opacity:0.8;font-size:30px;" align="center">	<a href="https://manybooks.net/search-book?field_genre%5B30%5D=30)" target="_blank">Literary Fiction</a></p>
+			</td>
+			<td style="border:none;"></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>
